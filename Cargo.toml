@@ -1,0 +1,17 @@
+[package]
+name = "finance_ibex"
+version = "0.1.0"
+edition = "2021"
+authors = ["Felipe Torres González <torresfelipex1@gmail.com>"]
+description = "A Finance library with API definitions."
+readme = "README.md"
+repository = "https://github.com/felipet/finance_ibex"
+license = "MIT"
+license-file = "LICENSE"
+keywords = ["finance"]
+
+[dependencies]
+finance_api = "0.1.0"
+pretty_assertions = "1.4.0"
+rstest = "0.18.2"
+toml = "0.8.11"
