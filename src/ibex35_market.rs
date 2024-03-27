@@ -203,7 +203,7 @@ mod tests {
         companies.insert(
             String::from("AENA"),
             Box::new(IbexCompany::new(
-                "AENA S.A.",
+                Some("AENA S.A."),
                 "AENA",
                 "AENA",
                 "ES0105046009",
@@ -214,7 +214,7 @@ mod tests {
         companies.insert(
             String::from("AMS"),
             Box::new(IbexCompany::new(
-                "Amadeus IT Holding S.A.",
+                Some("Amadeus IT Holding S.A."),
                 "AMADEUS",
                 "AMS",
                 "ES0109067019",
@@ -225,7 +225,7 @@ mod tests {
         companies.insert(
             String::from("CLNX"),
             Box::new(IbexCompany::new(
-                "Cellnex Telecom S.A.",
+                Some("Cellnex Telecom S.A."),
                 "CELLNEX",
                 "CLNX",
                 "ES0105066007",
