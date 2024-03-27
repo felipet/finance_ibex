@@ -12,6 +12,7 @@ keywords = ["finance"]
 
 [dependencies]
 finance_api = "0.1.0"
+log = "0.4.21"
 pretty_assertions = "1.4.0"
 rstest = "0.18.2"
 toml = "0.8.11"
