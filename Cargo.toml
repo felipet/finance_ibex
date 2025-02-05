@@ -1,9 +1,9 @@
 [package]
 name = "finance_ibex"
-version = "0.1.0"
+version = "0.1.0-beta1"
 edition = "2021"
 authors = ["Felipe Torres González <torresfelipex1@gmail.com>"]
-description = "A Finance library with API definitions."
+description = "A Finance library implementation for Ibex indexes and companies."
 readme = "README.md"
 repository = "https://github.com/felipet/finance_ibex"
 license = "MIT"
@@ -12,6 +12,7 @@ keywords = ["finance"]
 
 [dependencies]
 finance_api = "0.1.0"
+log = "0.4.21"
 pretty_assertions = "1.4.0"
 rstest = "0.18.2"
 toml = "0.8.11"
