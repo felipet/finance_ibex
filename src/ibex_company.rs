@@ -18,10 +18,10 @@ use std::fmt;
 /// [company]: https://docs.rs/finance_api/0.1.0/finance_api/trait.Company.html
 pub struct IbexCompany {
     full_name: Option<String>,
-    short_name: String,
+    name: String,
     ticker: String,
     isin: String,
-    nif: Option<String>,
+    extra_id: Option<String>,
 }
 
 impl IbexCompany {
@@ -42,10 +42,10 @@ impl IbexCompany {
     ) -> IbexCompany {
         IbexCompany {
             full_name: fname.map_or(None, |x| Some(String::from(x))),
-            short_name: String::from(sname),
+            name: String::from(sname),
             ticker: String::from(ticker),
             isin: String::from(isin),
-            nif: nif.map_or(None, |x| Some(String::from(x))),
+            extra_id: nif.map_or(None, |x| Some(String::from(x))),
         }
     }
 }
@@ -53,7 +53,7 @@ impl IbexCompany {
 impl Company for IbexCompany {
     /// Get the most common name of the stock.
     fn name(&self) -> &str {
-        &self.short_name
+        &self.name
     }
 
     /// Get the legal or full name of the stock.
@@ -90,7 +90,7 @@ impl Company for IbexCompany {
     ///
     /// `None` when no special ID is linked to the stock. An ID otherwise.
     fn extra_id(&self) -> Option<&String> {
-        self.nif.as_ref()
+        self.extra_id.as_ref()
     }
 }
 

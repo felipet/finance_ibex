@@ -1,6 +1,6 @@
 [package]
 name = "finance_ibex"
-version = "0.1.0-beta"
+version = "0.1.0-beta1"
 edition = "2021"
 authors = ["Felipe Torres González <torresfelipex1@gmail.com>"]
 description = "A Finance library implementation for Ibex indexes and companies."
